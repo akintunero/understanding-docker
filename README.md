@@ -25,11 +25,11 @@ Containers and VMs serve similar purposes by providing isolation for application
 
 **Startup Time:** Containers start almost instantly, typically in seconds, while VMs take minutes to boot because they must load a complete OS.
 
-**Isolation: ** Containers offer process and file system isolation but share the host kernel. VMs provide stronger isolation, running separate OS instances, which can be useful for security or running different OS types.
+Isolation: Containers offer process and file system isolation but share the host kernel. VMs provide stronger isolation, running separate OS instances, which can be useful for security or running different OS types.
 
 **Resource Utilization:** Containers can run many instances on a single host, maximizing resource utilization. VMs are less efficient due to their larger resource footprint.
 
-**Portability: ** Containers are highly portable and can run on any system with Docker installed. VMs are less portable due to differences in hypervisors and OS types.
+Portability: Containers are highly portable and can run on any system with Docker installed. VMs are less portable due to differences in hypervisors and OS types.
 
 **Scaling:** Containers are designed for horizontal scaling, allowing multiple instances to be easily added or removed. VM scaling can be more complex and resource-intensive.
 
@@ -153,3 +153,5 @@ Use Cases:
 
       docker rm my_container: Removes the stopped container named "my_container."
       docker rm -f my_container: Forcefully removes a running container named "my_container."
+
+
