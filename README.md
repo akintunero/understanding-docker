@@ -5,13 +5,13 @@ Docker is an open-source platform for developing, shipping, and running applicat
 ## Docker Architecture:
 Docker employs a client-server architecture, consisting of the following components:
 
-**Docker Client:** The Docker command-line interface (CLI) or graphical user interface (GUI) that allows users to interact with Docker. Users issue commands to the Docker client to manage containers and images.
+** Docker Client: ** The Docker command-line interface (CLI) or graphical user interface (GUI) that allows users to interact with Docker. Users issue commands to the Docker client to manage containers and images.
 
-**Docker Daemon: ** Also known as the Docker engine, the Docker daemon is a background service that manages container operations, including building, running, and stopping containers. It communicates with the Docker client to fulfill user requests.
+Docker Daemon:  Also known as the Docker engine, the Docker daemon is a background service that manages container operations, including building, running, and stopping containers. It communicates with the Docker client to fulfill user requests.
 
-**Docker Registries:** Docker registries are repositories for Docker images. Docker Hub is the default public registry where users can find and share container images. Organizations can set up private registries for more control over image distribution.
+Docker Registries: Docker registries are repositories for Docker images. Docker Hub is the default public registry where users can find and share container images. Organizations can set up private registries for more control over image distribution.
 
-**Docker Containers:** Containers are instances of Docker images. They encapsulate an application along with its dependencies and runtime environment. Containers run in isolated environments, sharing the host operating system's kernel but with their own file systems and processes.
+Docker Containers: Containers are instances of Docker images. They encapsulate an application along with its dependencies and runtime environment. Containers run in isolated environments, sharing the host operating system's kernel but with their own file systems and processes.
 
 **Docker Images:** Docker images are read-only templates used to create containers. They include application code, libraries, and other dependencies. Images are versioned and can be stored in registries for easy distribution.
 
