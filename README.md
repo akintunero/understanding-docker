@@ -6,42 +6,45 @@ Docker is an open-source platform for developing, shipping, and running applicat
 ## Docker Architecture
 Docker employs a client-server architecture, consisting of the following components:
 
-Docker Client: The Docker command-line interface (CLI) or graphical user interface (GUI) that allows users to interact with Docker. Users issue commands to the Docker client to manage containers and images.
+### Docker Client: The Docker command-line interface (CLI) or graphical user interface (GUI) that allows users to interact with Docker. Users issue commands to the Docker client to manage containers and images.
 
-Docker Daemon: Also known as the Docker engine, the Docker daemon is a background service that manages container operations, including building, running, and stopping containers. It communicates with the Docker client to fulfill user requests.
+### Docker Daemon: Also known as the Docker engine, the Docker daemon is a background service that manages container operations, including building, running, and stopping containers. It communicates with the Docker client to fulfill user requests.
 
-Docker Registries: Docker registries are repositories for Docker images. Docker Hub is the default public registry where users can find and share container images. Organizations can set up private registries for more control over image distribution.
+### Docker Registries: Docker registries are repositories for Docker images. Docker Hub is the default public registry where users can find and share container images. Organizations can set up private registries for more control over image distribution.
 
-Docker Containers: Containers are instances of Docker images. They encapsulate an application along with its dependencies and runtime environment. Containers run in isolated environments, sharing the host operating system's kernel but with their own file systems and processes.
+### Docker Containers: Containers are instances of Docker images. They encapsulate an application along with its dependencies and runtime environment. Containers run in isolated environments, sharing the host operating system's kernel but with their own file systems and processes.
 
-Docker Images: Docker images are read-only templates used to create containers. They include application code, libraries, and other dependencies. Images are versioned and can be stored in registries for easy distribution.
+### Docker Images: Docker images are read-only templates used to create containers. They include application code, libraries, and other dependencies. Images are versioned and can be stored in registries for easy distribution.
 
-Difference Between Containers and Virtual Machines
-Containers vs. Virtual Machines (VMs)
+## Difference Between Containers and Virtual Machines
+
+### Containers vs. Virtual Machines (VMs)
+
 Containers and VMs serve similar purposes by providing isolation for applications, but they have distinct differences:
 
-Resource Overhead: Containers have minimal overhead because they share the host OS kernel, making them lightweight and efficient. VMs, on the other hand, require a full OS and consume more resources.
+### Resource Overhead: Containers have minimal overhead because they share the host OS kernel, making them lightweight and efficient. VMs, on the other hand, require a full OS and consume more resources.
 
-Startup Time: Containers start almost instantly, typically in seconds, while VMs take minutes to boot because they must load a complete OS.
+### Startup Time: Containers start almost instantly, typically in seconds, while VMs take minutes to boot because they must load a complete OS.
 
-Isolation: Containers offer process and file system isolation, but they share the host kernel. VMs provide stronger isolation, running separate OS instances, which can be useful for security or running different OS types.
+### Isolation: Containers offer process and file system isolation, but they share the host kernel. VMs provide stronger isolation, running separate OS instances, which can be useful for security or running different OS types.
 
-Resource Utilization: Containers can run many instances on a single host, maximizing resource utilization. VMs are less efficient due to their larger resource footprint.
+### Resource Utilization: Containers can run many instances on a single host, maximizing resource utilization. VMs are less efficient due to their larger resource footprint.
 
-Portability: Containers are highly portable and can run on any system with Docker installed. VMs are less portable due to differences in hypervisors and OS types.
+### Portability: Containers are highly portable and can run on any system with Docker installed. VMs are less portable due to differences in hypervisors and OS types.
 
-Scaling: Containers are designed for horizontal scaling, allowing multiple instances to be easily added or removed. VM scaling can be more complex and resource-intensive.
+### Scaling: Containers are designed for horizontal scaling, allowing multiple instances to be easily added or removed. VM scaling can be more complex and resource-intensive.
 
-Exploring Basic Docker Commands
+## Exploring Basic Docker Commands
+
 Docker commands are the core tools for working with containers, enabling users to build, manage, and deploy containerized applications. In this comprehensive guide, we'll delve into the essential Docker commands, providing detailed explanations and use cases for each.
 
-docker run
+    docker run
 
 Purpose: Create and start a new Docker container.
 
 Syntax: docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
-Explanation:
+### Explanation:
 
 OPTIONS: Various options can be used with docker run, such as -it for interactive mode, -d for detached mode, --name to specify a custom name for the container, and more.
 IMAGE: Specifies the Docker image to use as the basis for the container.
@@ -49,9 +52,11 @@ COMMAND (optional): Overrides the default command specified in the image.
 ARG (optional): Additional arguments to pass to the command.
 Use Cases:
 
-docker run -it ubuntu:latest /bin/bash: Start an interactive Ubuntu container with a Bash shell.
-docker run -d --name my_app my_image:latest: Run a detached container named "my_app" from a custom image.
-docker ps
+    docker run -it ubuntu:latest /bin/bash: <!-- + Start an interactive Ubuntu container with a Bash shell. + -->
+    docker run -d --name my_app my_image:latest: # Run a detached container named "my_app" from a custom image. 
+
+
+    docker ps
 
 Purpose: List running containers.
 
