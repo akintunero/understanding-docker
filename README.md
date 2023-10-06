@@ -59,7 +59,7 @@ Docker is a powerful containerization platform that simplifies application devel
 
 ## Basic Docker commands and their Uses:
 
-    docker pull
+      docker pull
 
 Purpose: Download a Docker image from a registry.
 
@@ -69,11 +69,11 @@ Explanation: This command fetches a Docker image from a specified registry. If y
 
 Use Cases:
 
-    docker pull ubuntu:latest: Downloads the latest Ubuntu image from Docker Hub.
-    docker pull myregistry/myimage:v1.0: Pulls a specific version of a custom image from a private registry.
-    
-    
-    docker run
+      docker pull ubuntu:latest: Downloads the latest Ubuntu image from Docker Hub.
+      docker pull myregistry/myimage:v1.0: Pulls a specific version of a custom image from a private registry.
+      
+      
+      docker run
 
 Purpose: Create and start a new Docker container.
 
@@ -83,11 +83,11 @@ Explanation: This command creates a new container based on the specified Docker 
 
 Use Cases:
 
-    docker run -it ubuntu:latest /bin/bash: Starts an interactive Ubuntu container with a Bash shell.
-    docker run -d --name my_app my_image:latest: Runs a detached container named "my_app" from a custom image.
-
-
-    docker ps
+      docker run -it ubuntu:latest /bin/bash: Starts an interactive Ubuntu container with a Bash shell.
+      docker run -d --name my_app my_image:latest: Runs a detached container named "my_app" from a custom image.
+  
+  
+      docker ps
 
 Purpose: List running containers.
 
@@ -97,11 +97,11 @@ Explanation: This command shows a list of containers that are currently running.
 
 Use Cases:
 
-    docker ps: Lists all running containers with details.
-    docker ps -a: Lists all containers, including stopped ones.
-
-    
-    docker images
+      docker ps: Lists all running containers with details.
+      docker ps -a: Lists all containers, including stopped ones.
+  
+      
+      docker images
 
 Purpose: List Docker images on your system.
 
@@ -111,11 +111,11 @@ Explanation: This command displays a list of Docker images stored on your local 
 
 Use Cases:
 
-    docker images: Lists all downloaded images.
-    docker images -a: Lists all images, including intermediate ones.
-
-    
-    docker stop
+      docker images: Lists all downloaded images.
+      docker images -a: Lists all images, including intermediate ones.
+  
+      
+      docker stop
 
 Purpose: Gracefully stop a running container.
 
@@ -125,11 +125,11 @@ Explanation: This command stops one or more running containers. You can specify 
 
 Use Cases:
 
-    docker stop my_container: Stops the running container named "my_container."
-    docker stop -t 5 my_container: Stops the container with a 5-second timeout.
-
-
-    docker rm
+      docker stop my_container: Stops the running container named "my_container."
+      docker stop -t 5 my_container: Stops the container with a 5-second timeout.
+  
+  
+      docker rm
 
 Purpose: Remove one or more containers.
 
@@ -139,5 +139,5 @@ Explanation: This command deletes one or more containers. You can use options to
 
 Use Cases:
 
-    docker rm my_container: Removes the stopped container named "my_container."
-    docker rm -f my_container: Forcefully removes a running container named "my_container."
+      docker rm my_container: Removes the stopped container named "my_container."
+      docker rm -f my_container: Forcefully removes a running container named "my_container."
