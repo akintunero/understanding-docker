@@ -7,13 +7,13 @@ Docker employs a client-server architecture, consisting of the following compone
 
 ** Docker Client: ** The Docker command-line interface (CLI) or graphical user interface (GUI) that allows users to interact with Docker. Users issue commands to the Docker client to manage containers and images.
 
-Docker Daemon:  Also known as the Docker engine, the Docker daemon is a background service that manages container operations, including building, running, and stopping containers. It communicates with the Docker client to fulfill user requests.
+Docker Daemon: Also known as the Docker engine, the Docker daemon is a background service that manages container operations, including building, running, and stopping containers. It communicates with the Docker client to fulfil user requests.
 
 Docker Registries: Docker registries are repositories for Docker images. Docker Hub is the default public registry where users can find and share container images. Organizations can set up private registries for more control over image distribution.
 
 Docker Containers: Containers are instances of Docker images. They encapsulate an application along with its dependencies and runtime environment. Containers run in isolated environments, sharing the host operating system's kernel but with their own file systems and processes.
 
-**Docker Images:** Docker images are read-only templates used to create containers. They include application code, libraries, and other dependencies. Images are versioned and can be stored in registries for easy distribution.
+**Docker Images:** Docker images are read-only templates for creating containers. They include application code, libraries, and other dependencies. Images are versioned and can be stored in registries for easy distribution.
 
 ## Containers and Virtual Machines 
 
@@ -25,7 +25,7 @@ Containers and VMs serve similar purposes by providing isolation for application
 
 **Startup Time:** Containers start almost instantly, typically in seconds, while VMs take minutes to boot because they must load a complete OS.
 
-**Isolation: ** Containers offer process and file system isolation, but they share the host kernel. VMs provide stronger isolation, running separate OS instances, which can be useful for security or running different OS types.
+**Isolation: ** Containers offer process and file system isolation but share the host kernel. VMs provide stronger isolation, running separate OS instances, which can be useful for security or running different OS types.
 
 **Resource Utilization:** Containers can run many instances on a single host, maximizing resource utilization. VMs are less efficient due to their larger resource footprint.
 
@@ -59,6 +59,8 @@ Docker is a powerful containerization platform that simplifies application devel
 
 ## Basic Docker commands and their Uses:
 
+Docker Pull:
+
       docker pull
 
 Purpose: Download a Docker image from a registry.
@@ -72,7 +74,9 @@ Use Cases:
       docker pull ubuntu:latest: Downloads the latest Ubuntu image from Docker Hub.
       docker pull myregistry/myimage:v1.0: Pulls a specific version of a custom image from a private registry.
       
-      
+
+Docker Run:     
+
       docker run
 
 Purpose: Create and start a new Docker container.
@@ -85,8 +89,10 @@ Use Cases:
 
       docker run -it ubuntu:latest /bin/bash: Starts an interactive Ubuntu container with a Bash shell.
       docker run -d --name my_app my_image:latest: Runs a detached container named "my_app" from a custom image.
-  
-  
+
+
+Docker PS:
+
       docker ps
 
 Purpose: List running containers.
@@ -100,7 +106,9 @@ Use Cases:
       docker ps: Lists all running containers with details.
       docker ps -a: Lists all containers, including stopped ones.
   
-      
+
+Docker Images:
+
       docker images
 
 Purpose: List Docker images on your system.
@@ -114,7 +122,9 @@ Use Cases:
       docker images: Lists all downloaded images.
       docker images -a: Lists all images, including intermediate ones.
   
-      
+
+Docker Stop:
+
       docker stop
 
 Purpose: Gracefully stop a running container.
@@ -128,6 +138,8 @@ Use Cases:
       docker stop my_container: Stops the running container named "my_container."
       docker stop -t 5 my_container: Stops the container with a 5-second timeout.
   
+
+Docker RM:
   
       docker rm
 
