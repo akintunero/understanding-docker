@@ -13,6 +13,15 @@ Welcome to the Docker 7-Day Intensive Training. This training is designed to pro
 - Installing Docker
 - Running your first container
 - Understanding images and containers
+### [Day 02: Working with Docker Images](Day02.md)
+
+**Objective**: Learn how to create, manage, and optimize Docker images.
+
+**Activities**:
+- Pulling images from Docker Hub
+- Building custom images with Dockerfile
+- Tagging and pushing images to a registry
+- Optimizing images
 
 
 ## Additional Resources
