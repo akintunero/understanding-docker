@@ -23,6 +23,15 @@ Welcome to the Docker 7-Day Intensive Training. This training is designed to pro
 - Tagging and pushing images to a registry
 - Optimizing images
 
+### [Day 03: Container Management](Day03.md)
+
+**Objective**: Gain proficiency in managing containers.
+
+**Activities**:
+- Starting, stopping, and restarting containers
+- Inspecting containers
+- Using `docker exec` to interact with running containers
+- Removing containers
 
 ## Additional Resources
 
