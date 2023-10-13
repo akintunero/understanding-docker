@@ -112,4 +112,4 @@ Efficient resource management ensures that containers do not consume more than t
 - **Docker Tutorials**: Interactive tutorials to learn Docker.
   - [Katacoda Docker Tutorials](https://www.katacoda.com/courses/docker)
 
-By the end of this day, you should be comfortable with managing container lifecycles, viewing logs, and managing resources for Docker containers. Happy learning!
+By the end of this day, you should be comfortable with managing container lifecycles, viewing logs, and managing resources for Docker containers. 
