@@ -33,6 +33,18 @@ Welcome to the Docker 7-Day Intensive Training. This training is designed to pro
 - Using `docker exec` to interact with running containers
 - Removing containers
 
+
+### [Day 04: Managing Containers](Day04.md)
+
+**Objective**: Gain proficiency in managing containers.
+
+**Activities**:
+- Practice starting, stopping, and restarting containers
+- Learn about container lifecycle management and how to use commands like `docker start` and `docker exec`
+- Explore container logs and resource management
+
+
+
 ## Additional Resources
 
 For more information and in-depth tutorials, consider the following resources:
