@@ -43,6 +43,14 @@ Welcome to the Docker 7-Day Intensive Training. This training is designed to pro
 - Learn about container lifecycle management and how to use commands like `docker start` and `docker exec`
 - Explore container logs and resource management
 
+### [Day 05: Networking in Docker](Day05.md)
+
+**Objective**: Understand Docker networking concepts.
+
+**Activities**:
+- Learn about different network types in Docker (bridge, host, overlay)
+- Practice creating custom networks and connecting containers to them
+- Explore how containers communicate within a network
 
 
 ## Additional Resources
