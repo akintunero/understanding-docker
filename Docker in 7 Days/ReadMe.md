@@ -53,6 +53,15 @@ Welcome to the Docker 7-Day Intensive Training. This training is designed to pro
 - Explore how containers communicate within a network
 
 
+### [Day 06: Data Management with Volumes](Day06.md)
+
+**Objective**: Learn how to persist data in containers using volumes.
+
+**Activities**:
+- Understand the difference between bind mounts and volumes
+- Create volumes and attach them to containers
+- Practice data persistence by running a database container with a volume
+
 ## Additional Resources
 
 For more information and in-depth tutorials, consider the following resources:
