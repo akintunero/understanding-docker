@@ -62,6 +62,16 @@ Welcome to the Docker 7-Day Intensive Training. This training is designed to pro
 - Create volumes and attach them to containers
 - Practice data persistence by running a database container with a volume
 
+### [Day 07: Advanced Topics and Best Practices](Day07.md)
+
+**Objective**: Explore advanced topics and best practices in Docker.
+
+**Activities**:
+- Learn about Docker Compose for multi-container applications
+- Explore best practices for writing efficient Dockerfiles and managing images
+- Review security considerations when running containers
+
+
 ## Additional Resources
 
 For more information and in-depth tutorials, consider the following resources:
