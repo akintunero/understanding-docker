@@ -71,6 +71,11 @@ Welcome to the Docker 7-Day Intensive Training. This training is designed to pro
 - Explore best practices for writing efficient Dockerfiles and managing images
 - Review security considerations when running containers
 
+## Docker Projects
+
+For additional Docker practise projects, check out [Docker Projects](Docker_Projects.md).
+
+
 
 ## Additional Resources
 
